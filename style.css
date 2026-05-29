@@ -46,3 +46,15 @@ body {
     text-align: right;
     margin-top: 1rem;
 }
+
+
+.date-display {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #999; /* Sehr dezentes Grau, lenkt nicht vom Zitat ab */
+    
+    align-self: center; /* Bleibt schön mittig */
+    margin-bottom: 2rem; /* Ordentlicher Abstand zum Zitat darunter */
+}
