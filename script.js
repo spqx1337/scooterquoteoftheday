@@ -3,6 +3,11 @@ fetch('quotes.json')
     .then(quotes => {
         // Aktuelles Datum holen
         const today = new Date();
+
+        // NEU: Datum schön formatieren und ins HTML pushen
+        const options = { day: '2-digit', month: 'long', year: 'numeric' };
+        const formattedDate = today.toLocaleDateString('de-DE', options);
+        document.getElementById('quote-date').textContent = formattedDate;
         
         // Eindeutigen Seed generieren (z.B. 20260529)
         const dateSeed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
