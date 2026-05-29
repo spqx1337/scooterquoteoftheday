@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Ein warmer, ästhetischer Beige-Ton */
+    background-color: #F4F1EA; 
+    color: #1A1A1A;
+    
+    /* Flexbox für perfekte vertikale und horizontale Zentrierung auf dem Screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.quote-container {
+    max-width: 800px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column; /* Richtet Zitat und Songtitel untereinander aus */
+}
+
+.quote {
+    /* Die Schreibschrift (Google Font 'Caveat') */
+    font-family: 'Caveat', cursive;
+    font-size: 4.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.song-title {
+    /* Eine cleane, serifenlose Schrift als Kontrast (Google Font 'Montserrat') */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #666; /* Dezentes Dunkelgrau */
+    
+    /* Positionierung rechtsbündig unter dem Zitat */
+    align-self: flex-end;
+    text-align: right;
+    margin-top: 1rem;
+}
